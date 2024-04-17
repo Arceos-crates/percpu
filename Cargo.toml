@@ -20,7 +20,7 @@ default = []
 
 [dependencies]
 cfg-if = "1.0"
-kernel_guard = { path = "../kernel_guard", optional = true }
+kernel_guard = { git = "https://github.com/Arceos-crates/kernel_guard.git", optional = true }
 percpu_macros = { git = "https://github.com/Arceos-crates/percpu_macros.git" }
 
 [target.'cfg(target_arch = "x86_64")'.dependencies]
